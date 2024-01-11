@@ -1,0 +1,6 @@
+[feeds]
+  # Hacker News
+hn_newest = { url = "https://hnrss.org/newest", title = "HN Newest" }
+
+# Example RSS
+cisco_events_responses = { url = "https://sec.cloudapps.cisco.com/security/center/eventResponses_20.xml", title = "Cisco Events Responses" }

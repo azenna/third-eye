@@ -1,0 +1,17 @@
+[package]
+name = "third-eye"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde-xml-rs = "0.6.0"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11" }
+toml = "0.8.8"
+anyhow = "1.0.79"
+nu-ansi-term = "0.49.0"
+ratatui = "0.25.0"
+crossterm = "0.27.0"
