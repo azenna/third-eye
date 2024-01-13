@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct FeedConfig {
     pub url: String,
     pub title: String,
@@ -11,4 +11,3 @@ pub struct FeedConfig {
 pub struct Config {
     pub feeds: BTreeMap<String, FeedConfig>,
 }
-
