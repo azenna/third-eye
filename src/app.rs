@@ -2,6 +2,7 @@ use crate::{
     config::Config,
     rss::Rss,
     tui::{Event, Tui},
+    ast::Ast,
 };
 use crossterm::event::KeyCode;
 
@@ -25,7 +26,7 @@ pub enum Message {
 pub enum Screen {
     Home,
     Loading,
-    Content(Rss),
+    Content(Ast),
 }
 
 #[derive(Debug)]
